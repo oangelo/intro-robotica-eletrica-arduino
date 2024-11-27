@@ -206,6 +206,21 @@ Ao escolher um atuador, é essencial considerar os requisitos da aplicação, co
 
 #### IDE do Arduino (202110047911)
 
+O **IDE do Arduino** (Ambiente de Desenvolvimento Integrado) é a plataforma usada para programar placas Arduino. Ele permite escrever, compilar e carregar códigos diretamente para a placa conectada via USB. Os programas criados no IDE são chamados de "sketches" e utilizam uma versão simplificada de C/C++.
+
+Com uma interface simples, o IDE oferece ferramentas como:
+- **Editor de código** com destaque de sintaxe;
+- **Monitor Serial** para comunicação em tempo real com a placa;
+- **Gerenciador de bibliotecas** para facilitar o uso de funções adicionais.
+
+A versão mais recente, **Arduino IDE 2.x**, traz melhorias como:
+- Auto-completar;
+- Depuração integrada;
+- Interface modernizada e responsiva.
+
+Ele está disponível para **Windows**, **macOS** e **Linux**, sendo ideal para iniciantes e avançados.
+
+
 #### Estrutura básica de um sketch (202110048311)
 
 ### Programação Básica
