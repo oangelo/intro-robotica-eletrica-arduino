@@ -70,6 +70,9 @@ a) Termistores (NTC e PTC)
 
 - Aplicações: Controle de temperatura em sistemas de aquecimento, monitoramento ambiental.
 
+<img src="https://cdn.dooca.store/102441/products/ntc-200r_200X200.jpg?v=1678215097" alt="Logo" width="300"> <img src="https://cdn.dooca.store/102441/products/ptc-2_200X200.jpg?v=1677881391" alt="Logo" width="300">
+
+
 b) Sensores Analógicos (LM35, TMP36)
 - Funcionamento: Produzem uma tensão de saída proporcional à temperatura medida, geralmente em mV/°C.
   
@@ -77,12 +80,16 @@ b) Sensores Analógicos (LM35, TMP36)
   
 - Aplicações: Termômetros digitais, sistemas de climatização.
 
+<img src="https://www.vidadesilicio.com.br/wp-content/uploads/2021/09/1899-jpg.webp" alt="Logo" width="300">
+
 c) Sensores Digitais (DS18B20, DHT11, DHT22)
 - Funcionamento: Fornecem dados de temperatura em formato digital, eliminando a necessidade de conversão analógica-digital.
   
 - Integração com Arduino: Utilizam protocolos de comunicação como One-Wire (DS18B20) ou proprietários (DHT11/DHT22), necessitando de bibliotecas específicas.
   
 - Aplicações: Monitoramento climático, automação residencial.
+
+<img src="https://d229kd5ey79jzj.cloudfront.net/791/images/791_1_H.png?20241025120208" alt="Logo" width="300">
 
 #### Considerações Importantes
 - Precisão e Faixa de Medição: Escolha o sensor adequado com base na precisão necessária e na faixa de temperatura a ser medida.
@@ -99,6 +106,8 @@ a) Fotoresistores (LDR - Light Dependent Resistor)
 
 - Aplicações: Sistemas de iluminação automática, detectores de dia/noite.
 
+<img src="https://images.tcdn.com.br/img/img_prod/557243/sensor_de_luminosidade_ldr_5mm_224_1_a0f45d5f99af0e11fcfe040a57fb9c7f.png" alt="Logo" width="300">
+
 b) Fotodiodos e Fototransistores
 - Funcionamento:
   
@@ -109,6 +118,8 @@ b) Fotodiodos e Fototransistores
 - Integração com Arduino: Podem ser utilizados em modo fotovoltaico ou fotocondutor, conectados a entradas analógicas ou digitais.
 
 - Aplicações: Sensores de chama, comunicação óptica.
+  
+<img src="http://viverdeeletrica.com/wp-content/uploads/2022/09/o-que-e-fotodiodo-3-1024x576.jpg.webp" alt="Logo" width="300">
 
 c) Sensores de Luz Digitais (BH1750, TSL2561)
 - Funcionamento: Medem a intensidade luminosa e fornecem os dados via interfaces digitais como I2C.
@@ -116,6 +127,8 @@ c) Sensores de Luz Digitais (BH1750, TSL2561)
 - Integração com Arduino: Necessitam de bibliotecas específicas para comunicação via I2C.
 
 - Aplicações: Medições precisas de iluminação, sistemas de controle de brilho.
+
+<img src="https://acdn.mitiendanube.com/stores/975/836/products/120705-mla25066650087_092016-o-882932d634876c681615565096166664-640-0.webp" alt="Logo" width="300">
 
 #### Considerações Importantes
 - Sensibilidade Espectral: Verifique a faixa espectral de sensibilidade do sensor (luz visível, infravermelho, ultravioleta).
@@ -132,12 +145,16 @@ a) Sensores Ultrassônicos (HC-SR04)
 
 - Aplicações: Sistemas de estacionamento, robôs evitadores de obstáculos.
 
+<img src="https://d229kd5ey79jzj.cloudfront.net/620/images/620_1_H.png?20241016112135" alt="Logo" width="300">
+
 b) Sensores Infravermelhos (Sharp GP2Y0A21YK0F)
 - Funcionamento: Medem a reflexão de um feixe de luz infravermelha para determinar a distância.
 
 - Integração com Arduino: Fornecem uma saída analógica proporcional à distância do objeto.
 
 - Aplicações: Detecção de presença, contagem de objetos.
+
+<img src="https://curtocircuito.com.br/pub/media/catalog/product/cache/ebf77fb58d795a2dbe3218c301c821c6/s/e/sensor_de_dist_ncia_-_sharp_gp2y0a21yk0f_-_10_80_cm_1.jpg" alt="Logo" width="300">
 
 c) Sensores Indutivos e Capacitivos
 - Funcionamento:
@@ -150,12 +167,16 @@ c) Sensores Indutivos e Capacitivos
 
 - Aplicações: Detecção de peças em linhas de montagem, sensores de nível.
 
+<img src="https://cdn.brasiltec.ind.br/products/9f8c0481d77887e77b105130fbf1443f_wm.png" alt="Logo" width="300">
+
 d) Sensores de Toque (TTP223)
 - Funcionamento: Detectam a mudança na capacitância quando tocados pelo usuário.
 
 - Integração com Arduino: Saída digital conectada a um pino de entrada do Arduino.
 
 - Aplicações: Botões touch, interfaces homem-máquina.
+
+<img src="https://d229kd5ey79jzj.cloudfront.net/830/images/830_1_H.png?20240103131628" alt="Logo" width="300">
 
 ### Considerações Importantes
 - Alcance e Precisão: Selecione o sensor com base na distância máxima de detecção e precisão necessária.
