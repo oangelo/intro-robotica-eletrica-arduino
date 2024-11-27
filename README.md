@@ -23,6 +23,7 @@ A corrente elétrica representa o movimento ordenado e direcionado de cargas el�
 onde 𝐼 corresponde à corrente elétrica, 𝑄 representa a quantidade de carga em coulombs (C), e 𝑡 indica o intervalo de tempo em segundos (s). Esse princípio fundamental é crucial para a compreensão e modelagem de circuitos elétricos e eletrônicos, permitindo análises precisas do comportamento das cargas em diversos sistemas e dispositivos.
 
 Tipos de Corrente Elétrica
+
 Dois tipos principais de corrente elétrica são fundamentais para entender sua aplicação:
 
 Corrente Contínua (DC): Caracterizada pelo fluxo unidirecional de cargas. Típica de fontes como baterias e painéis solares, a DC é predominante em dispositivos eletrônicos devido à sua estabilidade e previsibilidade.
