@@ -13,7 +13,9 @@
 #### Carga elétrica (202110272411)
 
 #### Corrente elétrica (202110049611)
+
 Conceito Básico
+
 A corrente elétrica representa o movimento ordenado e direcionado de cargas elétricas, predominantemente elétrons, através de um material condutor. Este fluxo é induzido pela aplicação de uma diferença de potencial (tensão) entre dois pontos, criando um campo elétrico que propulsiona as cargas. A magnitude da corrente é quantificada em amperes (A), calculada pela equação fundamental:
 
 𝐼 = 𝑄 / 𝑡
@@ -247,6 +249,7 @@ Ao escolher um atuador, é essencial considerar os requisitos da aplicação, co
 #### Variáveis e tipos de dados (202110272411)
 
 #### Estruturas de controle (202110049611)
+
 Conceito Básico
 
 As estruturas de controle constituem elementos nucleares da programação, proporcionando aos programas a capacidade de tomar decisões, executar ações repetitivas e processar comandos de forma condicional. No contexto específico da programação para Arduino, essas estruturas são instrumentos fundamentais para definir o comportamento de dispositivos conectados, permitindo respostas dinâmicas a estímulos externos, como sinais de sensores, e a execução de sequências operacionais repetitivas.
