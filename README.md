@@ -350,10 +350,10 @@ O domínio sobre variáveis e tipos de dados é indispensável para qualquer pes
 
 ## Referências
 
-Cormen, Thomas H., et al. Introduction to Algorithms. 3ª ed. MIT Press, 2009.
-Sweigart, Al. Automate the Boring Stuff with Python: Practical Programming for Total Beginners. 2ª ed. No Starch Press, 2019.
-Zelle, John M. Python Programming: An Introduction to Computer Science. Franklin, Beedle & Associates Inc., 2010.
-Documentation Python. Tipos de Dados. Disponível em: https://docs.python.org/3/library/stdtypes.html
+- Cormen, Thomas H., et al. Introduction to Algorithms. 3ª ed. MIT Press, 2009.
+- Sweigart, Al. Automate the Boring Stuff with Python: Practical Programming for Total Beginners. 2ª ed. No Starch Press, 2019.
+- Zelle, John M. Python Programming: An Introduction to Computer Science. Franklin, Beedle & Associates Inc., 2010.
+- Documentation Python. Tipos de Dados. Disponível em: https://docs.python.org/3/library/stdtypes.html
 
 #### Estruturas de controle (202110049611)
 
