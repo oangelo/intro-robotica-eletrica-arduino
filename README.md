@@ -14,7 +14,7 @@
 
 #### Corrente elétrica (202110049611)
 
-Conceito Básico
+•Conceito Básico
 
 A corrente elétrica representa o movimento ordenado e direcionado de cargas elétricas, predominantemente elétrons, através de um material condutor. Este fluxo é induzido pela aplicação de uma diferença de potencial (tensão) entre dois pontos, criando um campo elétrico que propulsiona as cargas. A magnitude da corrente é quantificada em amperes (A), calculada pela equação fundamental:
 
@@ -22,7 +22,7 @@ A corrente elétrica representa o movimento ordenado e direcionado de cargas el�
 
 onde 𝐼 corresponde à corrente elétrica, 𝑄 representa a quantidade de carga em coulombs (C), e 𝑡 indica o intervalo de tempo em segundos (s). Esse princípio fundamental é crucial para a compreensão e modelagem de circuitos elétricos e eletrônicos, permitindo análises precisas do comportamento das cargas em diversos sistemas e dispositivos.
 
-Tipos de Corrente Elétrica
+•Tipos de Corrente Elétrica
 
 Dois tipos principais de corrente elétrica são fundamentais para entender sua aplicação:
 
@@ -30,7 +30,7 @@ Corrente Contínua (DC): Caracterizada pelo fluxo unidirecional de cargas. Típi
 
 Corrente Alternada (AC): Apresenta oscilação periódica na direção do fluxo de cargas. Amplamente utilizada em redes de distribuição de energia elétrica, sua eficiência no transporte de energia em longas distâncias a torna essencial para sistemas de transmissão elétrica.
 
-Fatores que Influenciam a Corrente Elétrica
+•Fatores que Influenciam a Corrente Elétrica
 
 Resistência: De acordo com a Lei de Ohm (𝐼 = 𝑉/𝑅), a corrente mantém relação inversamente proporcional à resistência do circuito. Materiais com menor resistividade facilitam um fluxo mais significativo de corrente.
 
@@ -38,16 +38,17 @@ Tensão: A intensidade da corrente correlaciona-se diretamente com a diferença 
 
 Composição Material: Condutores como cobre e alumínio possibilitam um fluxo de corrente mais expressivo, enquanto isolantes apresentam significativa limitação à passagem de cargas.
 
-Aplicações Práticas
+•Aplicações Práticas
+
 Circuitos Eletrônicos: Em sistemas de baixa potência, como dispositivos móveis, o gerenciamento preciso da corrente elétrica é essencial para garantir funcionalidade e prevenir sobreaquecimento.
 Eletrodomésticos: Equipamentos como refrigeradores, máquinas de lavar e ar-condicionados dependem criticamente da corrente elétrica para acionar motores e sistemas mecânicos.
 Biomedicina: Aplicações terapêuticas sofisticadas, como eletroestimulação neuromuscular e desfibrilação cardíaca, fundamentam-se no controle refinado da corrente elétrica.
 
-Considerações
+•Considerações
 
 A corrente elétrica configura-se como elemento central em praticamente todos os sistemas eletroeletrônicos contemporâneos. Compreender e gerenciar adequadamente seu comportamento constitui requisito fundamental para projetar dispositivos seguros, eficientes e inovadores, desde microcomponentes até complexas infraestruturas de distribuição energética.
 
-Referências:
+•Referências:
 - Halliday, David, Resnick, Robert, and Walker, Jearl. Fundamentals of Physics. 10ª ed. Wiley, 2013.
 - HyperPhysics. Corrente Elétrica. Disponível em: http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elecur.html
 
@@ -251,13 +252,14 @@ Ao escolher um atuador, é essencial considerar os requisitos da aplicação, co
 
 #### Estruturas de controle (202110049611)
 
-Conceito Básico
+•Conceito Básico
 
 As estruturas de controle constituem elementos nucleares da programação, proporcionando aos programas a capacidade de tomar decisões, executar ações repetitivas e processar comandos de forma condicional. No contexto específico da programação para Arduino, essas estruturas são instrumentos fundamentais para definir o comportamento de dispositivos conectados, permitindo respostas dinâmicas a estímulos externos, como sinais de sensores, e a execução de sequências operacionais repetitivas.
 
-Tipos de Estruturas de Controle
+•Tipos de Estruturas de Controle
 
-Condicionais:
+-Condicionais:
+
 if/else: Mecanismo que permite a execução seletiva de blocos de código com base em condições específicas, possibilitando respostas programáticas a diferentes cenários.
 
 if (sensorValue > 500) {
@@ -280,7 +282,7 @@ switch (mode) {
         break;
 }
 
-Laços de Repetição:
+-Laços de Repetição:
 
 for: Projetado para executar um bloco de código um número predeterminado de vezes, otimizando processos iterativos e sequenciais.
 
@@ -303,17 +305,17 @@ do {
     digitalWrite(ledPin, HIGH);
 } while (sensorValue < 500);
 
-Aplicações Práticas
+•Aplicações Práticas
 
 Automação Inteligente: Estruturas condicionais viabilizam a criação de sistemas automatizados, como sistemas de iluminação que respondem a detecções de movimento ou variações ambientais.
 Robótica Avançada: Laços de repetição possibilitam o controle preciso de movimentos cíclicos, fundamentais para a navegação e execução de tarefas por sistemas robóticos.
 Interfaces Interativas: Comandos condicionais permitem a implementação de interfaces responsivas, capazes de interpretar e reagir a diferentes entradas do usuário, como acionamentos de botões ou ajustes de potenciômetros.
 
-Considerações
+•Considerações
 
 As estruturas de controle transformam programas em sistemas verdadeiramente dinâmicos e adaptáveis, sendo componentes essenciais na criação de soluções tecnológicas interativas e inteligentes. No ecossistema Arduino, o domínio dessas estruturas é crítico para o desenvolvimento de projetos inovadores, eficientes e com alto grau de flexibilidade comportamental.
 
-Referências:
+•Referências:
 - Monk, Simon. Programming Arduino: Getting Started with Sketches. McGraw-Hill, 2016.
 - Arduino.cc. Control Structures. Disponível em: https://www.arduino.cc/en/Tutorial/BuiltInExamples/ControlStructures
 
