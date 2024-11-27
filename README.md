@@ -307,11 +307,11 @@ Características das Variáveis:
 A declaração de uma variável envolve especificar o tipo de dado e o nome da variável. O tipo de dado determina que tipo de valor a variável pode armazenar, como números inteiros, ponto flutuante, caracteres, etc. 
 
 **Exemplo em C:**
-int idade;  // Declaração de uma variável do tipo inteiro
-idade = 25; // Atribuição de valor à variável
+int idade;  // Declaração de uma variável do tipo inteiro.
+idade = 25; // Atribuição de valor à variável.
 
 **Exemplo em Python:**
-idade = 25  # Não é necessário declarar o tipo explicitamente
+idade = 25  // Não é necessário declarar o tipo explicitamente.
 
 ## Tipos de Dados
 
