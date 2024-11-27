@@ -332,16 +332,16 @@ São tipos que podem agrupar múltiplos valores.
 
 ## Importância e Aplicações
 
-- Armazenamento e Processamento de Dados
+- Armazenamento e Processamento de Dados:
 Variáveis permitem que os programas manipulem dados de forma eficiente. Desde simples cálculos até a criação de complexos sistemas de banco de dados, as variáveis são fundamentais.
 
-- Controle de Fluxo
+- Controle de Fluxo:
 O uso de variáveis é essencial no controle de decisões dentro de um programa.
 
-- Reutilização e Modularidade
+- Reutilização e Modularidade:
 A capacidade de armazenar informações em variáveis possibilita a reutilização de valores e o aumento da legibilidade e modularidade do código.
 
-- Eficiência e Desempenho
+- Eficiência e Desempenho:
 Escolher o tipo de dado correto é crucial para a eficiência do programa. Por exemplo, usar um tipo int quando se precisa de um valor flutuante pode resultar em erros, enquanto escolher um tipo double para armazenar valores inteiros pode desperdiçar memória desnecessariamente.
 
 ## Considerações Finais
