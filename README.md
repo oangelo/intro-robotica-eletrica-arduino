@@ -111,7 +111,67 @@ Tipos (BJT, FET), princípio de funcionamento, aplicações em chaveamento e amp
 Características, configurações básicas (inversor, não-inversor, somador)
 
 #### Microcontroladores (202010357611)
-Introdução, arquitetura básica, comparação com Arduino
+
+# Microcontroladores
+
+Os microcontroladores desempenham um papel crucial no mundo moderno, estando presentes em uma vasta gama de dispositivos eletrônicos, desde eletrodomésticos até sistemas automotivos e aplicações industriais. Esses dispositivos são pequenas unidades computacionais que possuem recursos integrados, como memória, processador e periféricos, permitindo o controle preciso de funções específicas.
+
+## Introdução
+
+Um microcontrolador é um circuito integrado que combina um processador, memória e periféricos de entrada/saída em um único chip. Ele é projetado para executar tarefas específicas em tempo real, sendo amplamente utilizado em sistemas embarcados. Os microcontroladores diferem de computadores convencionais por serem mais compactos, eficientes em termos de energia e otimizados para aplicações dedicadas.
+
+Os microcontroladores podem ser encontrados em dispositivos como:
+- Aparelhos domésticos (micro-ondas, geladeiras, máquinas de lavar).
+- Automóveis (controle de motores, freios ABS, airbags).
+- Dispositivos médicos (monitores cardíacos, equipamentos de ultrassom).
+- IoT (Internet das Coisas), permitindo conectividade e automação.
+
+## Arquitetura Básica
+
+A arquitetura de um microcontrolador geralmente segue dois modelos principais: **Harvard** ou **Von Neumann**. A diferença crucial entre essas arquiteturas está na separação ou unificação de memória de dados e memória de instruções:
+
+1. **Processador (CPU):**  
+   É o núcleo do microcontrolador, responsável pela execução de instruções e pelo controle do fluxo de dados entre os diferentes componentes.
+   
+2. **Memória:**
+   - **ROM/Flash:** Usada para armazenar o programa e dados não voláteis.
+   - **RAM:** Usada para armazenamento temporário de dados durante a execução do programa.
+   
+3. **Periféricos de Entrada/Saída:**  
+   Permitem a interação do microcontrolador com dispositivos externos, como sensores, motores e LEDs.
+   
+4. **Temporizadores e Contadores:**  
+   Essenciais para tarefas que requerem controle de tempo, como a geração de sinais PWM para motores.
+
+5. **Conversores Analógico-Digital (ADC):**  
+   Usados para interpretar sinais analógicos de sensores como temperatura e pressão.
+
+## Comparação com o Arduino
+
+Embora o Arduino seja amplamente conhecido, ele é, na verdade, uma plataforma baseada em microcontroladores, geralmente da série ATmega (fabricados pela Atmel, agora Microchip). A principal diferença entre microcontroladores genéricos e o Arduino está na simplicidade de uso:
+
+| Característica                | Microcontroladores Genéricos           | Arduino                                   |
+|-------------------------------|----------------------------------------|------------------------------------------|
+| **Complexidade**              | Requer conhecimento avançado em programação e hardware. | Interface amigável e suporte a iniciantes. |
+| **Programação**               | Linguagens como Assembly ou C/C++.     | Ambiente de desenvolvimento próprio (IDE Arduino) com bibliotecas pré-configuradas. |
+| **Periféricos**               | Depende do fabricante e do modelo.     | Geralmente inclui portas digitais, analógicas e conectividade básica. |
+| **Custo**                     | Mais barato para produção em larga escala. | Maior custo devido à facilidade de uso e componentes adicionais. |
+| **Flexibilidade**             | Alta, mas exige mais conhecimento.     | Limitada a módulos e shields compatíveis. |
+
+Enquanto microcontroladores oferecem flexibilidade e são amplamente utilizados em indústrias, o Arduino simplifica o processo de prototipagem, tornando-o ideal para estudantes e desenvolvedores iniciantes.
+
+## Aplicações dos Microcontroladores
+
+Os microcontroladores são a base de uma ampla gama de aplicações devido à sua capacidade de controlar sistemas complexos de maneira eficiente. Exemplos de aplicações incluem:
+- **Automação residencial:** Controle de luzes, climatização e segurança.
+- **Sistemas automotivos:** Monitoramento de motores, airbags e sistemas de entretenimento.
+- **Robótica:** Controle de movimento, sensores e comunicação.
+- **IoT (Internet das Coisas):** Conexão de dispositivos inteligentes à internet para automação e análise de dados.
+
+## Referências
+
+- Explicação Arduino. Disponível em: [https://pt.wikipedia.org/wiki/Arduino](https://pt.wikipedia.org/wiki/Arduino)
+- Arduino ou microcontroladores para todos. Disponível em: [https://www.tme.com/br/pt/news/about-product/page/42541/Arduino-ou-microcontroladores-para-todos/](https://www.tme.com/br/pt/news/about-product/page/42541/Arduino-ou-microcontroladores-para-todos/)
 
 ### Sensores e Atuadores
 
