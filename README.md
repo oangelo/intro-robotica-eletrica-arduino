@@ -102,7 +102,7 @@ I = \frac{V}{R} = \frac{12}{4} = 3A
 ## 🖼️ Diagramas e Imagens
 
 ### Circuito Simples Representando a Lei de Ohm
-![Circuito Simples](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Simple_resistor_circuit.svg/512px-Simple_resistor_circuit.svg.png)
+![Circuito Simples](https://www.electronica-pt.com/imagens/lei-ohm.png)
 
 ---
 
