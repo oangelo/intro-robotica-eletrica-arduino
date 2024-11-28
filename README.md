@@ -134,6 +134,82 @@ Tipos (cerâmico, eletrolítico, poliéster), capacitância, aplicações
 
 #### Indutores (202110272211)
 Tipos, indutância, aplicações
+# Indutores na Eletrônica Básica
+### O que é um Indutor?
+-  Os indutores, frequentemente chamados de bobinas ou solenoides, são componentes amplamente utilizados em circuitos eletrônicos. Sua principal característica é a capacidade de armazenar energia em forma de campo magnético, gerado pela passagem de corrente elétrica através de suas espiras.
+-  Os indutores apresentam diversas propriedades importantes. Para compreender melhor seu funcionamento, construção e aplicações, é essencial explorar suas principais características, que serão detalhadas a seguir.
+  > **Definição**: Um indutor é um componente eletrônico que armazena energia em um campo magnético.
+### Tipos de Indutores
+As características construtivas dos indutores variam entre os diferentes modelos. A seguir, são apresentados os principais tipos de indutores:
+| Tipo de Núcleo      | Descrição                              |
+|---------------------|----------------------------------------|
+| **Núcleo de Ar**    | Os indutores com núcleo de ar não usam nenhum tipo de material em seu núcleo. Embora tenham baixa indutância, os indutores de núcleo de ar não sofrem perdas associadas ao núcleo. Por esse motivo, são amplamente utilizados em circuitos de alta frequência.|
+| **Núcleo Laminado**         | Os indutores de núcleo laminado, como o nome indica, possuem um núcleo composto por finas lâminas de aço-silício revestidas com verniz. Esse tipo de indutor é utilizado em aplicações de baixa frequência, como em transformadores. Devido à sua construção, os indutores laminados apresentam uma significativa redução de perdas. |
+| **Núcleo Ferromagnético**     | Os indutores com núcleo de materiais ferromagnéticos são projetados para alcançar níveis mais elevados de indutância. Esses materiais têm a capacidade de intensificar e concentrar o campo magnético. No entanto, sua principal desvantagem é a ocorrência significativa de perdas durante o funcionamento.       |
+| **Núcleo de Ferrite**         | Os indutores com núcleo de ferrite oferecem excelente desempenho em circuitos de alta frequência, além de apresentarem baixas perdas. Essas vantagens são devido ao uso de cerâmica ferromagnética, que é não condutora, no núcleo do indutor. |
+| **Indutor Toroidal**         | O indutor toroidal, geralmente fabricado com ferrite, possui a forma de um anel. Esse formato permite que o campo magnético siga um caminho fechado, o que reduz significativamente as perdas e aumenta a indutância do componente. |
+
+## Aplicações
+Os indutores têm uma ampla gama de **aplicações** em circuitos eletrônicos, incluindo:
+
+- **Filtragem de Sinais**: Para eliminar ruídos e interferências indesejadas nos sinais.
+- **Armazenamento de Energia**: Em circuitos de alimentação, como fontes de alimentação chaveadas.
+- **Acoplamento de Sinais**: Para transmitir sinais de alta frequência entre diferentes estágios de um circuito.
+- **Atenuação de Corrente**: Para limitar a corrente em circuitos específicos.
+- **Controle de Velocidade**: Em motores elétricos e circuitos de controle de potência.
+
+Graças à sua capacidade de armazenar energia sob a forma de campo magnético, os indutores desempenham um papel fundamental em muitos circuitos eletrônicos, garantindo o funcionamento eficiente de diversos dispositivos que usamos no nosso dia a dia.
+
+### Suas vantagens e desvantagens
+| Vantagens     | Desvantagens |
+|---------------------|----------------------------------------|
+|  Alta eficiência em armazenar energia.  | Ocupam espaço físico em circuitos compactos. |
+|  Desempenho confiável em altas frequências.  | Perdas devido a resistência do fio e histerese magnética |
+
+# Indutância
+A indutância é a medida que indica a capacidade de um indutor em armazenar energia na forma de um campo magnético. A unidade de medida para a indutância é o Henry (H), que é uma grandeza física associada aos indutores. Nos diagramas de circuitos, o indutor é geralmente representado pela letra "L".
+
+É importante destacar que a energia armazenada em um indutor também pode ser expressa em Joules, representando a quantidade de trabalho necessária para estabelecer o campo magnético dentro do indutor. 
+
+### Fatores que afetam a indutância
+- **Número de espiras**: Mais espiras aumentam a indutância.
+- **Área do núcleo**: Maior área resulta em maior indutância.
+- **Material do núcleo**: Materiais com alta permeabilidade magnética aumentam a indutância.
+- **Comprimento da bobina**: Bobinas mais longas tendem a ter menor indutância.
+#
+### Fórmula para a Indutância
+A indutância \( L \) de um indutor pode ser calculada pela seguinte fórmula:
+
+$L = \frac{\mu \cdot N^2 \cdot A}{l}$
+
+Onde:
+- \( L \) é a indutância em Henry (H),
+- \( μ \)  é a permeabilidade do material do núcleo (em Henries por metro, H/m),
+- \( N \) é o número de espiras do indutor,
+- \( A \) é a área da seção transversal do núcleo (em metros quadrados, m²),
+- \( l \) é o comprimento do caminho magnético (em metros, m).
+
+## Aplicações da Indutância
+A indutância tem várias aplicações importantes em circuitos eletrônicos e sistemas de energia devido à sua capacidade de armazenar energia em forma de campo magnético.
+
+- **Filtragem de Sinais**: Usados em filtros para remover ruídos e interferências, como em circuitos de rádio e áudio.
+- **Fontes de Alimentação**: Em conversores DC-DC e AC-DC, indutores ajudam a armazenar e liberar energia de forma eficiente.
+- **Armazenamento de Energia**: Indutores podem armazenar energia em seu campo magnético, útil em sistemas de energia renovável e circuitos de armazenamento temporário.
+- **Acoplamento de Sinais**: Usados para acoplar sinais de alta frequência entre estágios de circuitos, como em transmissores de rádio.
+- **Reatância Indutiva**: Controlam a corrente em circuitos AC, sendo usados para limitar a corrente ou atenuar sinais.
+- **Motores Elétricos**: Indutores são essenciais em motores e geradores para gerar movimento ou converter energia elétrica em mecânica.
+- **Sensores Indutivos**: Detectam objetos metálicos através da variação do campo magnético, comuns em automação industrial.
+- **Ressonância e Osciladores**: Usados em circuitos ressonantes e osciladores para gerar sinais em frequências específicas, como em transmissões de rádio.
+- **Chaveamento de Alta Frequência**: Indutores com núcleo de ferrite são ideais para circuitos de modulação de largura de pulso (PWM) e alta frequência.
+
+
+# Referências
+- https://basicaodaeletronica.com.br/componentes/indutores/o-que-e-um-indutor-e-quais-sao-seus-tipos-e-aplicacoes/
+- https://professor.luzerna.ifc.edu.br/ricardo-kerschbaumer/wp-content/uploads/sites/43/2019/04/Apostila-Eletronica-Basica-2019-Parte-3.pdf
+- https://www.manualdaeletronica.com.br/indutor-o-que-e-funcionamento-tipos-aplicacoes/#google_vignette
+
+
+
 
 ### Componentes Ativos
 
