@@ -406,5 +406,153 @@ As estruturas de controle transformam programas em sistemas verdadeiramente din�
 ### Leitura de Sensores (202110048211)
 
 ### Controle de Motores (201910351011)
+# Controle de Motores (201910351011)
+
+O controle de motores é uma das aplicações mais comuns no desenvolvimento de projetos práticos com Arduino. Ele envolve conceitos de eletrônica, programação e controle de sistemas eletromecânicos. Abaixo, apresento ideias e orientações detalhadas para diferentes projetos envolvendo motores:
+
+---
+
+## 1. Controle de Motor DC com PWM
+
+**Descrição Geral:**  
+Um motor DC é simples e amplamente usado em projetos que necessitam de rotação contínua. Para controlar sua velocidade, utilizamos a técnica de Modulação por Largura de Pulso (PWM). Essa técnica permite regular a quantidade de energia que chega ao motor ao alternar rapidamente entre os estados ligado e desligado.
+
+**Funcionamento Detalhado:**  
+1. **Modulação por Largura de Pulso (PWM):**  
+   - PWM funciona variando o tempo em que o sinal está ligado (estado `HIGH`) em um ciclo de tempo fixo. Esse "duty cycle" é expresso em porcentagem, onde 0% significa que o motor está desligado e 100% que está na potência máxima.
+   - Por exemplo, um duty cycle de 50% faz o motor girar a metade de sua velocidade máxima.
+
+2. **Uso de Drivers de Motor:**  
+   - Motores DC geralmente requerem correntes mais altas do que o Arduino pode fornecer diretamente. Um driver, como o L298N, amplifica o sinal PWM e fornece a corrente necessária ao motor.
+   - O driver também permite controlar o sentido de rotação, enviando sinais adicionais para alternar a polaridade nos terminais do motor.
+
+3. **Controle de Velocidade:**  
+   - Um potenciômetro pode ser usado para gerar um valor analógico, que o Arduino converte em um valor digital (de 0 a 255). Esse valor é mapeado para o duty cycle do PWM, ajustando a velocidade do motor em tempo real.
+
+---
+
+## 2. Controle de Motor de Passo
+
+**Descrição Geral:**  
+Motores de passo são usados em aplicações que exigem precisão no controle de posição e movimento, como impressoras 3D e máquinas CNC. Eles se movem em passos discretos em vez de rotação contínua, permitindo um controle exato de ângulo e direção.
+
+**Funcionamento Detalhado:**  
+1. **Como Funcionam os Motores de Passo:**  
+   - Internamente, o motor de passo possui bobinas que são energizadas em uma sequência específica, criando campos magnéticos que puxam os ímãs do rotor em pequenos incrementos, chamados "passos".
+   - Cada passo corresponde a um deslocamento angular fixo (ex.: 1.8° para motores de 200 passos por revolução).
+
+2. **Modos de Operação:**  
+   - **Passo Cheio:** Energiza uma bobina por vez para mover o rotor um passo de cada vez. É o modo mais básico.
+   - **Meio Passo:** Energiza parcialmente duas bobinas ao mesmo tempo, permitindo maior suavidade no movimento e dobrando a resolução angular.
+   - **Microstepping:** Usa pulsos controlados para criar movimentos ainda mais suaves e precisos, ideal para aplicações de alta precisão.
+
+3. **Uso de Drivers:**  
+   - Drivers como ULN2003, A4988 ou DRV8825 simplificam o controle, convertendo sinais do Arduino em sequências de pulsos. Alguns drivers permitem configurar o tipo de passo por meio de jumpers.
+
+4. **Controle de Movimento:**  
+   - O Arduino envia comandos de número de passos e direção. É possível ajustar a velocidade alterando a frequência dos pulsos enviados.
+
+---
+
+## 3. Controle de Servo Motor
+
+**Descrição Geral:**  
+Servos são motores especializados para controle de posição precisa em um intervalo limitado (geralmente de 0° a 180°). Eles são ideais para braços robóticos, guinchos ou sistemas de direcionamento.
+
+**Funcionamento Detalhado:**  
+1. **Como Funcionam os Servos:**  
+   - O servo possui um motor DC interno, um circuito controlador e um potenciômetro embutido que mede a posição do eixo. Ele compara a posição atual com a posição desejada e ajusta o motor para alinhar as duas.
+
+2. **Controle por Pulsos:**  
+   - O ângulo é determinado pela duração do pulso enviado para o servo. Por exemplo:
+     - 1 ms → 0°  
+     - 1.5 ms → 90°  
+     - 2 ms → 180°  
+   - O sinal de controle é enviado continuamente em intervalos de 20 ms.
+
+3. **Integração com o Arduino:**  
+   - O Arduino gera esses pulsos automaticamente ao usar bibliotecas específicas para servo, tornando o controle simples e eficiente.
+
+4. **Aplicações:**  
+   - Controle de portas, guinadas em veículos robóticos e articulações de robôs.
+
+---
+
+## 4. Robô Seguidor de Linha
+
+**Descrição Geral:**  
+O robô seguidor de linha usa sensores para detectar uma linha (geralmente preta) sobre um fundo claro. Motores DC ajustam a direção e a velocidade do robô com base nos dados dos sensores, permitindo que ele siga o trajeto.
+
+**Funcionamento Detalhado:**  
+1. **Sensores IR:**  
+   - Sensores infravermelhos são posicionados na parte inferior do robô. Eles emitem luz infravermelha e medem a intensidade da luz refletida.
+   - Linhas escuras refletem menos luz, enquanto superfícies claras refletem mais. Essa diferença é detectada pelo sensor e convertida em um sinal analógico ou digital.
+
+2. **Lógica de Controle:**  
+   - Se o sensor esquerdo detecta a linha, significa que o robô precisa corrigir sua direção, acelerando o motor direito para girar para a esquerda.
+   - Se ambos os sensores detectarem a linha, o robô segue em frente.
+   - Se nenhum sensor detectar a linha, o robô pode parar ou procurar a linha novamente.
+
+3. **Motores e Driver:**  
+   - Dois motores DC controlados por um driver (como L298N) ajustam a direção e a velocidade do robô com base nas leituras dos sensores.
+
+4. **Ajuste Fino:**  
+   - A sensibilidade dos sensores pode ser ajustada para diferentes tipos de superfícies e iluminação, garantindo que o robô opere de forma estável.
+
+---
+
+## 5. Controle de Motor com Bluetooth
+
+**Descrição Geral:**  
+Motores DC ou servos podem ser controlados remotamente via um smartphone usando um módulo Bluetooth. Isso permite criar sistemas interativos e móveis.
+
+**Funcionamento Detalhado:**  
+1. **Módulo Bluetooth:**  
+   - Um módulo como HC-05 recebe comandos enviados pelo smartphone via um aplicativo de controle Bluetooth.
+   - Esses comandos são transmitidos ao Arduino como strings ou números.
+
+2. **Interpretação dos Comandos:**  
+   - O Arduino processa os comandos e executa ações correspondentes, como alterar a velocidade de um motor DC ou mover um servo para um ângulo específico.
+
+3. **Exemplo de Operação:**  
+   - Enviar "F" (Forward) pelo aplicativo faz o motor girar para frente.
+   - Enviar "B" (Backward) faz o motor girar para trás.
+   - Para servos, enviar números como "90" posiciona o motor no ângulo correspondente.
+
+4. **Aplicações:**  
+   - Carrinhos controlados remotamente, robôs interativos e sistemas de automação.
+
+
 
 ### Referências
+
+## Referências
+
+1. **Arduino PWM Motor Control**  
+   Documentação oficial do Arduino sobre controle de PWM. Disponível em:  
+   [https://www.arduino.cc/en/Tutorial/PWM](https://www.arduino.cc/en/Tutorial/PWM)
+
+2. **Motor Driver L298N**  
+   Guia prático para uso do driver L298N no controle de motores DC. Disponível em:  
+   [https://lastminuteengineers.com/l298n-dc-stepper-driver-arduino-tutorial/](https://lastminuteengineers.com/l298n-dc-stepper-driver-arduino-tutorial/)
+
+3. **Stepper Motor Control with Arduino**  
+   Tutorial completo sobre motores de passo e Arduino. Disponível em:  
+   [https://www.arduino.cc/en/Tutorial/StepperMotor](https://www.arduino.cc/en/Tutorial/StepperMotor)
+
+4. **Servo Motor Control**  
+   Introdução ao controle de servos utilizando a biblioteca Servo.h. Disponível em:  
+   [https://www.arduino.cc/en/Reference/Servo](https://www.arduino.cc/en/Reference/Servo)
+
+5. **Building a Line Following Robot**  
+   Artigo sobre a construção de um robô seguidor de linha com sensores IR. Disponível em:  
+   [https://www.circuitdigest.com/microcontroller-projects/arduino-line-follower-robot](https://www.circuitdigest.com/microcontroller-projects/arduino-line-follower-robot)
+
+6. **HC-05 Bluetooth Module with Arduino**  
+   Tutorial sobre como integrar o módulo Bluetooth HC-05 ao Arduino. Disponível em:  
+   [https://howtomechatronics.com/tutorials/arduino/bluetooth-control-using-hc-05/](https://howtomechatronics.com/tutorials/arduino/bluetooth-control-using-hc-05/)
+
+7. **Motor Control Best Practices**  
+   Dicas gerais para controle seguro e eficiente de motores com Arduino. Disponível em:  
+   [https://create.arduino.cc/projecthub](https://create.arduino.cc/projecthub)
+
