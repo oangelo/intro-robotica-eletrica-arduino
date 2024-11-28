@@ -225,5 +225,98 @@ Ao escolher um atuador, é essencial considerar os requisitos da aplicação, co
 ### Leitura de Sensores (202110048211)
 
 ### Controle de Motores (201910351011)
+- O controle de motores é uma das aplicações mais comuns no desenvolvimento de projetos práticos com Arduino. Ele envolve conceitos de eletrônica, programação e controle de sistemas eletromecânicos. Abaixo, apresento ideias e orientações para diferentes projetos envolvendo motores:
+
+**1. Controle de Motor DC com PWM**
+**Descrição:**
+- Controle da velocidade de um motor DC usando modulação por largura de pulso (PWM).
+
+**Componentes Necessários:**
+- Arduino Uno (ou similar)
+- Motor DC
+- Driver de motor (ex.: L298N ou L293D)
+- Fonte de alimentação externa para o motor
+- Potenciômetro (para ajuste de velocidade)
+
+**Funcionamento:**
+- Use um potenciômetro para definir o nível de PWM.
+- O Arduino envia sinais PWM ao driver para controlar a velocidade do motor.
+- O driver gerencia a potência entregue ao motor com base no sinal recebido.
+
+
+**2. Controle de Motor de Passo**
+**Descrição:**
+- Controle preciso de movimento usando um motor de passo para posicionamento ou rotação.
+
+**Componentes Necessários:**
+- Motor de passo (ex.: 28BYJ-48 ou NEMA 17)
+- Driver de motor (ex.: ULN2003, A4988 ou DRV8825)
+- Fonte de alimentação externa (dependendo do motor)
+
+**Funcionamento:**
+- Configure os passos (cheio, meio, etc.) no driver.
+- Controle o número de passos e a direção do motor via código Arduino.
+- Use sensores ou botões para iniciar/pausar o movimento.
+
+**Aplicação:** 
+- Máquinas CNC
+- Robôs
+- Impressoras 3D.
+
+
+**3. Controle de Servo Motor**
+**Descrição:**
+- Controle de posição de um servo motor para aplicações como robótica ou braços mecânicos.
+
+**Componentes Necessários:**
+- Servo motor (ex.: SG90 ou MG995)
+- Arduino Uno
+- Potenciômetro (opcional, para controle manual)
+
+**Funcionamento:**
+- Escreva valores de ângulo (0° a 180°) para o servo usando a biblioteca Servo.h.
+- Use um potenciômetro para alterar a posição do servo em tempo real.
+
+
+**4. Robô Seguidor de Linha**
+**Descrição:**
+- Robô com dois motores DC que segue uma linha preta em um fundo branco.
+
+**Componentes Necessários:**
+- Motores DC (2)
+- Driver de motor (ex.: L298N)
+- Sensores IR (para detectar a linha)
+- Chassi robótico
+
+**Funcionamento:**
+- Os sensores IR detectam a posição da linha.
+- Com base na leitura, ajuste a velocidade e direção dos motores para alinhar o robô.
+
+
+**5. Controle de Motor com Bluetooth**
+**Descrição:**
+- Controle remoto de um motor DC ou servo via aplicativo de smartphone.
+
+**Componentes Necessários:**
+
+- Motor DC ou servo motor
+- Driver de motor (para motores DC)
+- Módulo Bluetooth (ex.: HC-05 ou HC-06)
+- Smartphone com aplicativo (ex.: Bluetooth Controller)
+
+**Funcionamento:**
+- O módulo Bluetooth recebe comandos do smartphone.
+- O Arduino interpreta os comandos e ajusta a velocidade/posição do motor.
+
+**Dicas Gerais:**
+- Fonte de Alimentação: Certifique-se de que a alimentação dos motores seja adequada para evitar danos ao Arduino. Use fontes externas com drivers apropriados.
+- Drivers de Motor: Drivers como L298N, L293D e DRV8825 são cruciais para motores de maior potência.
+- Proteção: Use diodos de proteção (flyback) para evitar picos de tensão que podem danificar o Arduino e os motores.
+- Programação: Teste o código em etapas e use ferramentas de depuração para ajustar os parâmetros.
 
 ### Referências
+
+- "Arduino Cookbook" (by Michael Margolis)
+- "Exploring Arduino: Tools and Techniques for Engineering Wizardry" (by Jeremy Blum)
+- "Arduino Projects Book" (Official Starter Kit Book)
+- "Arduino Robotics" (by John-David Warren, Josh Adams, and Harold Timmis)
