@@ -224,7 +224,7 @@ Ao escolher um atuador, é essencial considerar os requisitos da aplicação, co
 
 ### Leitura de Sensores (202110048211)
 
-### Controle de Motores (201910351011)
+### Controle de Motores (201910351011)a
 - O controle de motores é uma das aplicações mais comuns no desenvolvimento de projetos práticos com Arduino. Ele envolve conceitos de eletrônica, programação e controle de sistemas eletromecânicos. Abaixo, apresento ideias e orientações para diferentes projetos envolvendo motores:
 
 **1. Controle de Motor DC com PWM**
