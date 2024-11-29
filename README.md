@@ -222,7 +222,82 @@ Tipos (BJT, FET), princípio de funcionamento, aplicações em chaveamento e amp
 ### Circuitos Integrados
 
 #### Amplificadores Operacionais (202110050111)
-Características, configurações básicas (inversor, não-inversor, somador)
+
+Características Ideais de Amplificadores
+
+- Ganho de tensão infinito: Qualquer pequena diferença de tensão entre as entradas gera uma saída amplificada de forma idealmente infinita.
+- Impedância de entrada infinita: Nenhuma corrente entra pelas entradas.
+- Impedância de saída zero: A saída pode fornecer corrente sem alterar a tensão.
+- Banda passante infinita: O amplificador opera igualmente bem em todas as frequências.
+- Rejeição de modo comum infinita: Sinais iguais em ambas as entradas são completamente ignorados.
+- Saturação: A saída está limitada aos valores da alimentação (𝑉𝑐𝑐+ e 𝑉𝑐𝑐−).
+  
+Configurações Básicas de Amplificadores
+
+1. Amplificador Inversor
+   
+Características:
+
+- Inverte a fase do sinal de entrada
+- Ganho = -Rf/Rin
+- Sinal de saída com fase oposta ao sinal de entrada
+
+Equação do Ganho:
+
+Av = -Rf/Rin
+
+2. Amplificador Não-Inversor
+   
+Características:
+
+- Mantém a fase original do sinal de entrada
+- Ganho sempre maior que 1
+- Alta impedância de entrada
+
+Equação do Ganho:
+
+Av = 1 + (Rf/R1)
+
+3. Amplificador Somador
+   
+Características:
+
+- Soma múltiplos sinais de entrada
+- Realiza soma ponderada dos sinais
+- Útil em processamento de sinais analógicos
+
+Aplicações Principais
+
+- Instrumentação
+- Filtros ativos
+- Conversores de sinais
+- Controle de sistemas
+- Processamento de áudio
+
+Considerações Importantes
+
+- Verificar limitações do AmpOp na folha de dados
+
+Atentar para:
+
+- Tensão de offset
+- Corrente de polarização
+- Slew rate
+- Faixa de frequência de operação
+
+Dicas Práticas
+
+- Sempre use fontes simétricas quando possível
+- Escolha o AmpOp adequado para cada aplicação
+- Considere as limitações de frequência e ganho
+- Faça proteção contra sobrecarga
+
+Simbologia Básica
+
+- (+) Entrada inversora
+- (-) Entrada não-inversora
+- V+ Alimentação positiva
+- V- Alimentação negativa
 
 #### Microcontroladores (202010357611)
 Introdução, arquitetura básica, comparação com Arduino
