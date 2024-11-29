@@ -268,22 +268,22 @@ Características:
 
 Aplicações Principais
 
-Instrumentação
-Filtros ativos
-Conversores de sinais
-Controle de sistemas
-Processamento de áudio
+- Instrumentação
+- Filtros ativos
+- Conversores de sinais
+- Controle de sistemas
+- Processamento de áudio
 
 Considerações Importantes
 
-Verificar limitações do AmpOp na folha de dados
+- Verificar limitações do AmpOp na folha de dados
 
 Atentar para:
 
-Tensão de offset
-Corrente de polarização
-Slew rate
-Faixa de frequência de operação
+- Tensão de offset
+- Corrente de polarização
+- Slew rate
+- Faixa de frequência de operação
 
 Dicas Práticas
 
