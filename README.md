@@ -278,7 +278,8 @@ Tipos de Transistores
         - FETs: Imagens por ultrassom e sistemas de ressonância magnética.
 
 Esses transistores são essenciais em diversas áreas da eletrônica, desde circuitos analógicos até digitais e aplicações de potência.
-Referencia:
+
+**Referencia:**
 
 https://www.makerhero.com/guia/componentes-eletronicos/transistor/
 
