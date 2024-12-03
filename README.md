@@ -12,6 +12,82 @@
 
 #### Carga elétrica (202110272411)
 
+---
+
+# Carga Elétrica: Conceito, Propriedades e Aplicações Práticas
+
+A carga elétrica é um dos conceitos fundamentais no estudo da eletricidade e do eletromagnetismo. Ela pode ser definida como a propriedade física das partículas subatômicas responsáveis pelas interações eletromagnéticas. Esse conceito é essencial para a compreensão dos fenômenos elétricos e eletrônicos e está presente em diversas aplicações tecnológicas.
+
+## 1. O que é Carga Elétrica?
+
+A carga elétrica é uma propriedade intrínseca de partículas como prótons e elétrons, que determina a forma como essas partículas interagem entre si. 
+
+1.  **Elétron**: Possui carga negativa, com valor aproximado de \( -1,6 \times 10^{-19} \) coulombs.  
+2.  **Próton**: Possui carga positiva, com o mesmo valor, mas de sinal oposto ao do elétron.  
+3.  **Neutron**: Não possui carga elétrica (é neutro).
+
+Existem dois tipos de cargas elétricas: 
+
+- **Carga Positiva**: Associada aos prótons.
+- **Carga Negativa**: Associada aos elétrons.
+
+### Unidade de Medida  
+A carga elétrica é medida em coulombs (C), onde um coulomb equivale à carga de aproximadamente \(6,24 \times 10^{18}\) elétrons.
+
+### Princípios Fundamentais
+1. **Atração e Repulsão**: Cargas de sinais opostos se atraem, enquanto cargas de mesmo sinal se repelem.
+2. **Conservação da Carga**: Em um sistema isolado, a carga elétrica total permanece constante.
+
+## 2. Lei de Coulomb
+
+A força entre duas cargas elétricas \(q_1\) e \(q_2\), separadas por uma distância \(r\), é descrita pela Lei de Coulomb:
+
+\[ F = k \frac{|q_1 \cdot q_2|}{r^2} \]
+
+Onde:
+- \(F\) é a força elétrica em newtons (N),
+- \(k\) é a constante eletrostática (\(8,99 \times 10^9 \, \text{N} \cdot \text{m}^2 / \text{C}^2\)),
+- \(q_1\) e \(q_2\) são as cargas em coulombs,
+- \(r\) é a distância entre as cargas em metros.
+
+Essa lei mostra que a força é diretamente proporcional ao produto das cargas e inversamente proporcional ao quadrado da distância entre elas.
+
+## 3. Propriedades da Carga Elétrica
+
+### 3.1. Quantização da Carga  
+A carga elétrica é quantizada, ou seja, ela ocorre em múltiplos da carga do elétron (\(-1,6 \times 10^{-19} \, C\)).
+
+### 3.2. Conservação da Carga  
+A carga elétrica não pode ser criada nem destruída, apenas transferida de um objeto para outro.
+
+## 4. Aplicações Práticas da Carga Elétrica
+
+### 4.1. Eletrização dos Corpos  
+Existem três formas principais de eletrizar um corpo:
+
+1. **Atrito**: Transferência de elétrons entre dois corpos ao sofrerem fricção.
+2. **Contato**: Transferência de carga através do toque direto entre corpos condutores.
+3. **Indução**: Redistribuição de cargas em um condutor devido à proximidade de um objeto carregado.
+
+### 4.2. Corrente Elétrica  
+O fluxo ordenado de cargas elétricas forma a corrente elétrica, fundamental para o funcionamento de dispositivos como lâmpadas, motores e eletrônicos.
+
+### 4.3. Aplicações Tecnológicas  
+1. **Circuitos Elétricos**: Uso da carga elétrica em circuitos para controlar o fluxo de corrente.
+2. **Eletrostática**: Tecnologias como impressoras a laser e filtros eletrostáticos utilizam princípios de carga elétrica.
+
+## 5. Considerações Finais
+
+A carga elétrica é um elemento central no estudo da eletricidade e do magnetismo, com aplicações que vão desde os fenômenos naturais até dispositivos eletrônicos avançados. Sua compreensão é fundamental para o avanço da tecnologia moderna.
+
+## Referências Bibliográficas
+
+- HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. **Fundamentos de Física: Eletromagnetismo**. 10ª ed. Wiley, 2013.  
+- TIPLER, Paul A.; MOSCA, Gene. **Física para Cientistas e Engenheiros**. 6ª ed. Bookman, 2009.  
+- HAMBLEY, Allan R. **Electronics: A Top-Down Approach to Computer-Aided Circuit Design**. Prentice Hall, 2011.  
+- KHAN ACADEMY. Carga elétrica e lei de Coulomb. Disponível em: [Khan Academy](https://pt.khanacademy.org).  
+- HYPERPHYSICS. Charge and Coulomb's Law. Disponível em: [HyperPhysics](http://hyperphysics.phy-astr.gsu.edu). 
+
 #### Corrente elétrica (202110049611)
 
 •Conceito Básico
@@ -394,6 +470,73 @@ Ao escolher um atuador, é essencial considerar os requisitos da aplicação, co
 ### Programação Básica
 
 #### Variáveis e tipos de dados (202110272411)
+---
+# Programação Básica: Variáveis e Tipos de Dados
+
+A programação é a base da computação, e entender conceitos fundamentais como variáveis e tipos de dados é essencial para qualquer programador. Esses conceitos formam a base para o desenvolvimento de software, permitindo o armazenamento e manipulação de informações de maneira eficaz. Este trabalho explora o conceito de variáveis e tipos de dados, suas definições, características e a importância no desenvolvimento de programas.
+
+## Definição de Variáveis
+
+Variáveis são espaços na memória do computador usados para armazenar dados que podem ser modificados durante a execução de um programa. Elas possuem um nome, um tipo de dado e um valor inicial. O valor de uma variável pode ser alterado ao longo do tempo, o que permite a manipulação de dados dinâmicos durante a execução de um programa.
+
+Características das Variáveis:
+
+1. **Nome**: Identificador usado para acessar a variável.
+2. **Tipo de Dado**: Define o tipo de informação que a variável pode armazenar.
+3. **Valor Inicial**: O valor que a variável possui quando é criada.
+
+### Declaração de Variáveis
+
+A declaração de uma variável envolve especificar o tipo de dado e o nome da variável. O tipo de dado determina que tipo de valor a variável pode armazenar, como números inteiros, ponto flutuante, caracteres, etc. 
+
+**Exemplo em C:**
+int idade;  // Declaração de uma variável do tipo inteiro.
+idade = 25; // Atribuição de valor à variável.
+
+**Exemplo em Python:**
+idade = 25  // Não é necessário declarar o tipo explicitamente.
+
+## Tipos de Dados
+
+Os tipos de dados definem a natureza dos valores que podem ser armazenados em uma variável. Eles variam de acordo com a linguagem de programação, mas os mais comuns incluem:
+
+1. **Inteiro (int)**: Armazena números inteiros, positivos ou negativos, sem casas decimais.
+2. **Ponto Flutuante (float, double)**: Armazena números com casas decimais.
+3. **Caractere (char)**: Armazena um único caractere, como letras e símbolos.
+4. **Booleano (bool) (char)**: Armazena valores lógicos true (verdadeiro) ou false (falso).
+5. **String**: Representa uma sequência de caracteres, como palavras ou frases.
+
+### Tipos de Dados Compostos
+
+São tipos que podem agrupar múltiplos valores.
+
+1. **Array (vetor)**: Coleção de elementos do mesmo tipo.
+2. **Objetos (Object)**: Estrutura que pode conter múltiplos tipos de dados.
+
+## Importância e Aplicações
+
+- Armazenamento e Processamento de Dados:
+Variáveis permitem que os programas manipulem dados de forma eficiente. Desde simples cálculos até a criação de complexos sistemas de banco de dados, as variáveis são fundamentais.
+
+- Controle de Fluxo:
+O uso de variáveis é essencial no controle de decisões dentro de um programa.
+
+- Reutilização e Modularidade:
+A capacidade de armazenar informações em variáveis possibilita a reutilização de valores e o aumento da legibilidade e modularidade do código.
+
+- Eficiência e Desempenho:
+Escolher o tipo de dado correto é crucial para a eficiência do programa. Por exemplo, usar um tipo int quando se precisa de um valor flutuante pode resultar em erros, enquanto escolher um tipo double para armazenar valores inteiros pode desperdiçar memória desnecessariamente.
+
+## Considerações Finais
+
+O domínio sobre variáveis e tipos de dados é indispensável para qualquer pessoa que deseja aprender a programar. Esses conceitos são a base para tarefas simples e complexas em linguagens de programação modernas. Ao entender como utilizar variáveis corretamente, é possível criar programas mais robustos, eficientes e organizados.
+
+## Referências
+
+- Cormen, Thomas H., et al. Introduction to Algorithms. 3ª ed. MIT Press, 2009.
+- Sweigart, Al. Automate the Boring Stuff with Python: Practical Programming for Total Beginners. 2ª ed. No Starch Press, 2019.
+- Zelle, John M. Python Programming: An Introduction to Computer Science. Franklin, Beedle & Associates Inc., 2010.
+- Documentation Python. Tipos de Dados. Disponível em: https://docs.python.org/3/library/stdtypes.html
 
 #### Estruturas de controle (202110049611)
 
