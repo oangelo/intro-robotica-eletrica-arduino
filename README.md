@@ -216,8 +216,77 @@ A indutância tem várias aplicações importantes em circuitos eletrônicos e s
 #### Diodos (201810051811)
 Tipos (retificador, Zener, LED), curva característica, aplicações
 
-#### Transistores (202110048111)
-Tipos (BJT, FET), princípio de funcionamento, aplicações em chaveamento e amplificação
+#### Transistores 
+Os transistores são dispositivos semicondutores fundamentais na eletrônica moderna. Eles são usados para amplificar ou controlar o fluxo de corrente elétrica em circuitos eletrônicos. Em essência, os transistores atuam como interruptores ou amplificadores de corrente, permitindo o controle preciso do fluxo de elétrons em um circuito. Existem diferentes tipos de transistores, sendo os mais comuns os transistores bipolares e os transistores de efeito de campo (FETs). 
+Tipos de Transistores
+1.	**Transistor Bipolar de Junção (BJT):**
+
+- Funcionamento: É controlado por corrente. Uma pequena corrente na base controla uma corrente maior entre o coletor e o emissor. Existem dois tipos principais:
+
+	- NPN: Corrente flui quando a base recebe uma tensão positiva em relação ao emissor.
+
+	- PNP: Corrente flui quando a base tem uma tensão negativa em relação ao emissor.
+
+- Regiões de Operação: Corte (não conduz), saturação (condução total) e ativa (amplificação de corrente).
+- Aplicações: Amplificação de sinais analógicos, controle de motores e circuitos de baixa potência.
+
+    - Exemplos: 
+	    Amplificadores de áudio: Usados em amplificadores de sinais analógicos, como em caixas de som, microfones e rádios.
+	    Osciladores: Em circuitos geradores de sinais, como os usados em rádios AM/FM.
+	    Chaveamento em baixa potência: Controlam LEDs, pequenos motores e relés em circuitos simples
+    
+2.	**Transistor de Efeito de Campo (FET):**
+
+- Funcionamento: Controlado por tensão no terminal "gate". 
+
+- Tem três terminais: Gate (G), Source (S) e Drain (D).
+
+    - Existem subtipos:
+	    JFET: Conduz corrente sem tensão no gate; tensão negativa pode "fechar" o canal (canal N) ou positiva (canal P).
+
+	    MOSFET: Usado em chaveamento rápido, pode ser do tipo depleção (normalmente condutivo) ou enriquecimento (normalmente não-condutivo).
+
+    - Características: Alta impedância de entrada, eficiência energética e capacidade de operar em altas frequências.
+    - Aplicações: Conversores de potência, amplificação de sinais sensíveis, circuitos lógicos e controles digitais.
+    - Exemplos:
+        - Amplificação de sinais de alta frequência: MOSFETs são comuns em amplificadores de RF usados em transmissores de celular e Wi-Fi.
+        Circuitos lógicos digitais: São os blocos fundamentais de portas lógicas (AND, OR, NOT) usadas em processadores e memórias, m MOSFET CMOS (Complementary Metal-Oxide-Semiconductor) em um chip de smartphone.
+
+        - Fontes de alimentação chaveadas: Controlam a energia em fontes de energia como carregadores de laptop e fontes ATX de computadores.
+        Controle de motores: MOSFETs são usados para controlar motores DC e PWM (Modulação por Largura de Pulso) em drones e robôs.
+- Aplicações em Chaveamento
+    - BJT: Usado em circuitos onde a simplicidade e o baixo custo são essenciais, como relés e interruptores de corrente contínua.
+    - FET (MOSFET): Amplamente utilizado em chaveamento de alta velocidade em fontes de alimentação, inversores e circuitos digitais devido à eficiência e rápida resposta.
+- Aplicações em Amplificação
+    - BJT: Ideal para amplificar sinais de áudio e vídeo em circuitos de baixa potência, devido ao ganho de corrente.
+    - FET: Excelente para amplificar sinais fracos (como de sensores ou microfones) sem carregar a fonte do sinal, graças à alta impedância de entrada.
+- Comparação entre BJT e FET
+    - BJT: Melhor para aplicações que requerem controle de corrente precisa.
+    - FET: Preferido para circuitos de alta frequência, alta eficiência energética e aplicações onde a minimização do consumo de energia do controle é essencial.
+- Aplicações específicas por setor:
+    - Eletrônicos de consumo:
+        - BJTs: Amplificação de sinais de microfones e captadores de instrumentos musicais.
+        - FETs: Controle de telas OLED em televisores e smartphones.
+    - Comunicações:
+        - BJTs: Osciladores em circuitos de rádio AM/FM.
+        - FETs: Amplificadores de sinal de micro-ondas em satélites e torres de celular.
+    - Indústria automotiva:
+        - BJTs: Circuitos de ignição de motores a combustão.
+        - MOSFETs: Controle de portas automáticas ou faróis LED.
+    - Indústria médica:
+        - BJTs: Circuitos analógicos de equipamentos como monitores de frequência cardíaca.
+        - FETs: Imagens por ultrassom e sistemas de ressonância magnética.
+
+Esses transistores são essenciais em diversas áreas da eletrônica, desde circuitos analógicos até digitais e aplicações de potência.
+
+**Referencia:**
+
+https://www.makerhero.com/guia/componentes-eletronicos/transistor/
+
+https://www.manualdaeletronica.com.br/transistor-o-que-e-funcionamento-aplicacoes/
+
+https://www.electricity-magnetism.org/pt-br/como-funciona-um-fet-em-um-circuito/
+
 
 ### Circuitos Integrados
 
