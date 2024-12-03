@@ -188,6 +188,12 @@ Leitura de Datasheets: Sempre consulte o datasheet do sensor para entender suas 
 Bibliotecas Disponíveis: Aproveite as bibliotecas disponíveis na comunidade para facilitar a programação e integração.
 Protoboard e Shields: Utilize protoboards ou shields para facilitar as conexões durante o desenvolvimento.
 
+### Referências 
+
+MARGOLIS, Michael. Arduino cookbook: recipes to begin, expand, and enhance your projects. 2. ed. Sebastopol: O'Reilly Media, 2020.
+ARDUINO. Arduino documentation. Disponível em: https://www.arduino.cc/reference/en/. Acesso em: 3 dez. 2024.
+STACK OVERFLOW. Discussões e soluções para sensores Arduino. Disponível em: https://stackoverflow.com. Acesso em: 3 dez. 2024.
+
 #### Atuadores (201910072711)
 Motores DC, servomotores, motores de passo
 
