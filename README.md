@@ -632,6 +632,168 @@ Ao escolher um atuador, é essencial considerar os requisitos da aplicação, co
 
 #### Estrutura básica de um sketch (202110048311)
 
+# Estrutura Básica de um Sketch para Arduino
+
+## 1. Introdução aos Sketches
+
+Um sketch no ambiente Arduino é um programa completo que pode ser carregado e executado em uma placa Arduino. Diferente de linguagens de programação tradicionais, sketches em Arduino seguem uma estrutura específica e simplificada, projetada para facilitar a programação de microcontroladores.
+
+## 2. Componentes Fundamentais de um Sketch
+
+### 2.1 Estrutura Básica
+
+Todo sketch Arduino possui duas funções principais obrigatórias:
+
+1. `setup()`: Função executada uma única vez quando o Arduino é iniciado
+2. `loop()`: Função executada continuamente após o `setup()`
+
+Exemplo mínimo:
+```cpp
+void setup() {
+  // Código de inicialização executado uma vez
+}
+
+void loop() {
+  // Código principal executado repetidamente
+}
+```
+
+### 2.2 Diretivas de Inclusão
+
+Incluem bibliotecas necessárias para funcionalidades específicas:
+```cpp
+#include <Biblioteca.h>
+```
+
+### 2.3 Declaração de Variáveis Globais
+
+Variáveis acessíveis em todas as funções do sketch:
+```cpp
+const int pinoLED = 13;  // Definição de pino
+int contador = 0;        // Variável global
+```
+
+## 3. Função `setup()`
+
+### 3.1 Propósitos Principais
+- Inicializar comunicações seriais
+- Configurar modos de pinos (entrada/saída)
+- Definir configurações iniciais
+
+Exemplo:
+```cpp
+void setup() {
+  Serial.begin(9600);        // Inicializa comunicação serial
+  pinMode(pinoLED, OUTPUT);  // Configura pino como saída
+}
+```
+
+## 4. Função `loop()`
+
+### 4.1 Características
+- Executa repetidamente após `setup()`
+- Contém a lógica principal do programa
+- Pode incluir:
+  - Leitura de sensores
+  - Controle de atuadores
+  - Tomada de decisões
+  - Execução de algoritmos
+
+Exemplo:
+```cpp
+void loop() {
+  // Código executado continuamente
+  if (condição) {
+    // Ações específicas
+  }
+}
+```
+
+## 5. Estruturas de Controle
+
+### 5.1 Condicionais
+```cpp
+if (condição) {
+  // Código executado se condição for verdadeira
+} else {
+  // Código alternativo
+}
+```
+
+### 5.2 Laços de Repetição
+```cpp
+for (int i = 0; i < 10; i++) {
+  // Repete 10 vezes
+}
+
+while (condição) {
+  // Repete enquanto condição for verdadeira
+}
+```
+
+## 6. Funções Personalizadas
+
+Podem ser criadas para modularizar o código:
+```cpp
+void minhaFuncao() {
+  // Código da função
+}
+
+void setup() {
+  minhaFuncao();  // Chamada da função
+}
+```
+
+## 7. Boas Práticas
+
+- Comentar o código
+- Usar nomes significativos para variáveis
+- Modularizar o código
+- Tratar possíveis erros
+- Usar constantes para valores fixos
+
+## 8. Exemplo Completo
+
+```cpp
+// Declarações globais
+const int pinoSensor = A0;
+const int pinoLED = 13;
+int valorSensor = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(pinoLED, OUTPUT);
+}
+
+void loop() {
+  valorSensor = analogRead(pinoSensor);
+  
+  if (valorSensor > 500) {
+    digitalWrite(pinoLED, HIGH);
+  } else {
+    digitalWrite(pinoLED, LOW);
+  }
+  
+  delay(100);  // Pequena pausa
+}
+```
+
+## 9. Dicas Avançadas
+
+- Utilize interrupções para eventos
+- Aproveite bibliotecas especializadas
+- Gerencie eficientemente a memória
+- Otimize o consumo de energia
+
+## Referências Bibliográficas
+
+BANZI, M. *Primeiros Passos com Arduino*. São Paulo: Novatec, 2011.
+
+MCROBERTS, M. *Arduino Básico*. São Paulo: Novatec, 2011.
+
+MONK, S. *Programação com Arduino II: Passos Avançados com Sketches*. Bookman, 2014.
+
+
 ### Programação Básica
 
 #### Variáveis e tipos de dados (202110272411)
