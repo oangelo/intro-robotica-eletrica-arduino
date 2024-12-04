@@ -472,7 +472,70 @@ https://www.electricity-magnetism.org/pt-br/como-funciona-um-fet-em-um-circuito/
 ### Circuitos Integrados
 
 #### Amplificadores Operacionais (202110050111)
-Características, configurações básicas (inversor, não-inversor, somador)
+
+Um amplificador operacional (geralmente abreviado como amplificador op ou amp op) é um dispositivo eletrônico que amplifica a diferença de potencial (tensão) entre duas entradas, geralmente com ganho muito alto. Ele é um componente fundamental em circuitos analógicos e é utilizado em diversas aplicações, como amplificação de sinais, filtros, comparadores, osciladores e muito mais. Em circuitos modernos, amplificadores operacionais mais avançados, como os de baixo ruído ou alta velocidade, são frequentemente utilizados.
+
+O amplificador operacional serve para manipular sinais elétricos de diversas formas, sendo amplamente utilizado em circuitos eletrônicos analógicos. Ele é uma peça-chave para criar circuitos que realizam operações matemáticas (daí o nome "operacional") ou para processar sinais, como amplificação, comparação e filtragem. Em resumo, o amplificador operacional é essencial para manipular sinais analógicos de maneira flexível e precisa, estando presente em praticamente todos os dispositivos eletrônicos modernos.
+
+Os objetivos de um amplificador operacional estão diretamente relacionados às suas aplicações em circuitos eletrônicos. Ele é projetado para realizar uma ampla gama de funções analógicas de forma precisa e eficiente. Abaixo estão os principais objetivos:
+
+- Amplificação de Sinais
+	- Objetivo: Aumentar a amplitude de sinais fracos sem distorcê-los.
+	- Exemplo: Ampliar o sinal de um microfone ou sensor para um nível utilizável por outros dispositivos.
+- Processamento de Sinais
+  	- Objetivo: Realizar operações matemáticas em sinais elétricos, como somar, subtrair, integrar ou derivar.
+	- Exemplo: Utilizado em controladores PID e filtros em sistemas de automação industrial.
+- Comparação de Níveis de Tensão
+  	- Objetivo: Determinar qual de duas tensões é maior e produzir uma saída correspondente.
+	- Exemplo: Acionar alarmes ou circuitos baseados em uma mudança em sensores, como termostatos eletrônicos.
+- Isolamento entre Circuitos
+  	- Objetivo: Atuar como um "buffer" (seguidor de tensão) para evitar que um circuito interfira no funcionamento de outro.
+	- Exemplo: Garantir que um sensor de baixa potência não seja sobrecarregado por outros componentes no circuito.
+- Criação de Filtros Ativos
+  	- Objetivo: Permitir ou rejeitar certas frequências em sinais elétricos.
+	- Exemplo: Usado em sistemas de som para separar graves, médios e agudos.
+- Estabilização de Circuitos
+  	- Objetivo: Garantir que a saída de um sistema seja linear e estável mesmo diante de variações na entrada.
+	- Exemplo: Regulação de tensão em fontes de alimentação.
+-  Geração de Sinais
+  	- Objetivo: Criar sinais periódicos (ondas senoidais, triangulares ou quadradas) ou impulsos.
+	- Exemplo: Utilizado em osciladores ou moduladores para telecomunicações.
+- Redução de Ruído
+  	- Objetivo: Melhorar a relação sinal-ruído, garantindo que o sinal amplificado seja limpo e sem distorções indesejadas.
+	- Exemplo: Em sistemas de áudio ou instrumentação.
+
+Aplicações Principais de um Amplificador Operacional
+
+- Instrumentação
+- Filtros ativos
+- Conversores de sinais
+- Controle de sistemas
+- Processamento de áudio
+
+Considerações Importantes
+
+- Verificar limitações do Amplificador Operacional na folha de dados
+
+Atentar para:
+
+- Tensão de offset
+- Corrente de polarização
+- Slew rate
+- Faixa de frequência de operação
+
+Dicas Práticas
+
+- Sempre use fontes simétricas quando possível
+- Escolha o Amplificador Operacional adequado para cada aplicação
+- Considere as limitações de frequência e ganho
+- Faça proteção contra sobrecarga
+
+Simbologia Básica
+
+- (+) Entrada inversora
+- (-) Entrada não-inversora
+- V+ Alimentação positiva
+- V- Alimentação negativa
 
 #### Microcontroladores (202010357611)
 
