@@ -310,6 +310,95 @@ A Lei de Ohm é essencial para:
 #### Resistores (202010358111)
 Tipos, código de cores, aplicações
 
+#### **Conceito e Funcionamento**
+
+Resistores são componentes passivos fundamentais em circuitos eletrônicos. Eles têm como principal função limitar a corrente elétrica, dividir tensões e ajustar níveis de sinais dentro de um circuito. Baseiam-se no princípio da resistência elétrica, que mede a oposição ao fluxo de corrente, conforme descrito pela Lei de Ohm:
+
+R = V / I
+
+
+Onde:
+- **R**: Resistência medida em ohms (Ω),
+- **V**: Tensão em volts (V),
+- **I**: Corrente em amperes (A).
+
+---
+
+#### **Tipos de Resistores**
+
+1. **Fixos**:
+   - Valor de resistência inalterável.
+   - Exemplos: Resistor de carbono, filme metálico.
+
+2. **Variáveis**:
+   - Permitem ajuste da resistência.
+   - Exemplos: Potenciômetros, trimpots.
+
+3. **Dependentes**:
+   - Resistência varia com grandezas externas.
+   - Exemplos: Termistores (com temperatura), LDRs (com luz).
+
+---
+
+#### **Código de Cores**
+
+Os resistores fixos possuem um sistema de identificação de valores baseado em cores pintadas em faixas. Cada cor representa um número ou multiplicador:
+
+| Cor       | Dígito | Multiplicador (\(10^n\)) |
+|-----------|--------|-------------------------|
+| Preto     | 0      | \(10^0\)                |
+| Marrom    | 1      | \(10^1\)                |
+| Vermelho  | 2      | \(10^2\)                |
+| Laranja   | 3      | \(10^3\)                |
+| Amarelo   | 4      | \(10^4\)                |
+| Verde     | 5      | \(10^5\)                |
+| Azul      | 6      | \(10^6\)                |
+| Violeta   | 7      | \(10^7\)                |
+| Cinza     | 8      | \(10^8\)                |
+| Branco    | 9      | \(10^9\)                |
+
+---
+
+#### **Aplicações Práticas**
+
+1. **Limitação de Corrente**:
+   - Proteger LEDs e outros componentes sensíveis.
+   - Exemplo: Resistor em série com LED.
+
+2. **Divisão de Tensão**:
+   - Criar valores intermediários de tensão.
+   - Exemplo: Circuitos divisores de tensão para sensores.
+
+3. **Pulldown e Pullup**:
+   - Evitar estados indefinidos em pinos digitais.
+
+4. **Ajuste de Sinais**:
+   - Controlar amplitudes em sinais analógicos.
+
+---
+
+#### **Exemplo de Uso**
+
+##### Circuito Simples com LED:
+
+1. Resistor limita a corrente no LED para evitar superaquecimento.
+2. Valor recomendado: 220Ω para 5V.
+
+**Código Arduino:**
+
+```cpp
+const int ledPin = 13;
+void setup() {
+    pinMode(ledPin, OUTPUT);
+}
+void loop() {
+    digitalWrite(ledPin, HIGH);
+    delay(1000);
+    digitalWrite(ledPin, LOW);
+    delay(1000);
+}
+```
+
 #### Capacitores (201410064011)
 Tipos (cerâmico, eletrolítico, poliéster), capacitância, aplicações
 
