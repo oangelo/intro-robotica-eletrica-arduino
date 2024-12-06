@@ -766,6 +766,107 @@ Ao escolher um atuador, é essencial considerar os requisitos da aplicação, co
 
 #### IDE do Arduino (202110047911)
 
+A IDE do Arduino (Integrated Development Environment) é a ferramenta oficial para escrever, compilar e enviar códigos (sketches) para placas Arduino e microcontroladores compatíveis. É uma interface intuitiva, projetada para facilitar o desenvolvimento de projetos com hardware embarcado, mesmo para iniciantes.
+
+Visão Geral da Interface da IDE do Arduino
+
+Ao abrir a IDE do Arduino, você verá os seguintes elementos principais:
+
+Barra de Menu: Localizada no topo da janela, com opções como Arquivo, Editar, Sketch, Ferramentas e Ajuda. Essas opções permitem salvar, abrir sketches, ajustar configurações e muito mais.
+
+Barra de Botões: Logo abaixo do menu, temos botões para ações rápidas, que explicaremos em detalhes adiante.
+
+Área de Código: O espaço principal onde você escreve seus programas em linguagem C/C++.
+
+Console de Mensagens: Exibe mensagens de erro, status de compilação e envio, e outros logs do sistema.
+
+Barra de Status: Mostra informações como porta serial conectada e o tipo de placa selecionada.
+
+Monitor Serial: Ferramenta para interagir com a placa em tempo real, enviando e recebendo dados pela interface serial.
+
+Funções dos Botões da IDE
+
+![image](https://github.com/user-attachments/assets/d8330b8b-aa6c-4395-be2f-399b184c84c9)
+
+
+1. Verificar (✔️)
+
+Compila o código para verificar se há erros de sintaxe ou lógica. Ele não envia o código para a placa, mas ajuda a identificar problemas no programa.
+
+2. Enviar (→)
+
+Compila e envia o código para a placa Arduino conectada. Para que funcione, você deve selecionar a porta serial correta em Ferramentas > Porta.
+
+3. Novo (📄)
+
+Abre um novo sketch em branco.
+
+4. Abrir (📂)
+
+Permite abrir sketches salvos anteriormente.
+
+5. Salvar (💾)
+
+Salva o sketch atual.
+
+6. Monitor Serial (🔍)
+
+Abre o monitor serial, usado para enviar e receber dados em tempo real com a placa.
+
+Bibliotecas no Arduino
+
+As bibliotecas são conjuntos de funções pré-escritas que ajudam a controlar hardware ou realizar tarefas específicas, como usar sensores, motores ou se comunicar por protocolos como I2C ou SPI.
+
+Adicionar Bibliotecas
+
+Pelo Gerenciador de Bibliotecas:
+
+Vá em Sketch > Incluir Biblioteca > Gerenciar Bibliotecas....
+
+Procure a biblioteca desejada, clique nela e pressione "Instalar".
+
+Importando Manualmente:
+
+Baixe a biblioteca como um arquivo ZIP.
+
+Vá em Sketch > Incluir Biblioteca > Adicionar Biblioteca .ZIP... e selecione o arquivo baixado.
+
+Adicionar Novos Microcontroladores
+
+A IDE do Arduino permite programar microcontroladores de terceiros, como ESP8266, ESP32 e ATtiny. Para isso, você precisa adicionar as placas ao gerenciador de placas.
+
+Passos para Adicionar Novos Microcontroladores:
+
+Adicione o URL do Gerenciador de Placas:
+
+Vá em Arquivo > Preferências.
+
+No campo URLs Adicionais para Gerenciador de Placas, insira o link fornecido pelo fabricante do microcontrolador.
+
+Clique em "OK".
+
+Instale o Pacote de Placas:
+
+Vá em Ferramentas > Placa > Gerenciador de Placas....
+
+Procure o microcontrolador desejado, clique em "Instalar".
+
+Selecione a Placa:
+
+Vá em Ferramentas > Placa e selecione o modelo do microcontrolador que você adicionou.
+
+Exemplos Visuais
+
+Abaixo estão imagens para ilustrar os principais elementos e configurações da IDE:
+
+Interface Principal da IDE: ￼
+
+Gerenciador de Bibliotecas: ￼
+
+Gerenciador de Placas: ￼
+
+Essas ferramentas tornam a IDE do Arduino uma solução prática para iniciantes e profissionais no desenvolvimento de sistemas embarcados.
+
 #### Estrutura básica de um sketch (202110048311)
 
 ### Programação Básica
