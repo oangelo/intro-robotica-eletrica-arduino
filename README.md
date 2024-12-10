@@ -483,8 +483,76 @@ A indutância tem várias aplicações importantes em circuitos eletrônicos e s
 
 ### Componentes Ativos
 
-#### Diodos (201810051811)
-Tipos (retificador, Zener, LED), curva característica, aplicações
+# ***Diodos***
+- [📘 O que são Diodos?](#o-que-sao-diodos)
+- [💡 Tipos de Diodos](#tipos-de-diodos)
+- [📉 Curva Característica](#curva-caracteristica)
+- [📊 Aplicações da Curva Característica](#aplicacoes-da-curva-caracteristica)
+- [🔧 Aplicações de Diodos](#aplicacoes-de-diodos)
+- [📚 Referências](#referências)
+
+<details>
+  <summary id="o-que-sao-diodos">📘 O que são Diodos?</summary>
+  Diodos são componentes eletrônicos semicondutores que permitem a passagem de corrente elétrica em apenas uma direção, bloqueando a direção oposta. Eles têm duas conexões: ânodo (terminal positivo) e cátodo (terminal negativo). Quando a tensão no ânodo é maior que no cátodo, o diodo conduz corrente. Caso contrário, ele bloqueia o fluxo de corrente.
+</details>
+
+<details>
+  <summary id="tipos-de-diodos">💡 Tipos de Diodos</summary>
+  Existem diversos tipos de diodos, cada um com características e aplicações específicas. Alguns deles são:
+  
+  - **Diodo Retificador**: Utilizado em circuitos de retificação para converter corrente alternada (CA) em corrente contínua (CC) em fontes de alimentação.
+  
+  - **Diodo Zener**: Usado em reguladores de tensão, permitindo a passagem de corrente em polarização inversa quando a tensão atinge um valor específico.
+  
+  - **Diodo LED**: Emite luz quando conduz corrente, utilizado em displays e indicadores luminosos.
+</details>
+
+<details>
+  <summary id="curva-caracteristica">📉 Curva Característica</summary>
+  A curva característica de um diodo é um gráfico que relaciona a tensão aplicada ao diodo (geralmente no eixo horizontal, ou eixo x) com a corrente que flui através dele (no eixo vertical, ou eixo y). Essa curva ajuda a visualizar o comportamento do diodo em diferentes condições de operação, mostrando como ele reage a variações na tensão. Em outras palavras, ela "mapeia" o comportamento elétrico do diodo em diferentes condições.
+  
+  ### Como interpretar a curva característica?
+  A curva característica de um diodo típico apresenta três regiões principais:
+
+  - **Região de Polarização Direta**: Nessa região, a tensão aplicada é positiva, e a corrente aumenta rapidamente à medida que a tensão aumenta, indicando que o diodo está conduzindo corrente. A curva nesta região é exponencial, significando que a corrente aumenta rapidamente com um pequeno aumento de tensão acima da tensão de limiar.
+
+  - **Região de Polarização Reversa**: Nessa região, a tensão aplicada é negativa, e a corrente é praticamente nula até que atinja uma tensão de ruptura, onde a corrente aumenta drasticamente. Normalmente, a curva nesta região é uma linha reta próxima de zero no eixo de corrente, indicando que a corrente é mínima até a tensão de ruptura.
+
+  - **Região de Ruptura**: Nessa região, a tensão aplicada é negativa e atinge um valor crítico (tensão de ruptura), fazendo com que o diodo conduza uma grande corrente, podendo danificá-lo.
+</details>
+
+<details>
+  <summary id="aplicacoes-da-curva-caracteristica">📊 Aplicações da Curva Característica</summary>
+  A curva característica de um diodo ajuda a prever como o diodo se comportará em circuitos com diferentes níveis de tensão, permitindo o projeto adequado de fontes de alimentação, reguladores de tensão e circuitos de proteção.
+  
+  Em projetos com motores ou sensores, entender a curva característica permite calcular a corrente que fluirá em diferentes partes do circuito, assegurando que os componentes estejam corretamente dimensionados para evitar falhas.
+</details>
+
+<details>
+  <summary id="aplicacoes-de-diodos">🔧 Aplicações de Diodos</summary>
+  Diodos são utilizados em diversas aplicações, como:
+
+  - **Proteção de Pinos**: Protegem os pinos digitais e analógicos do Arduino contra tensões inversas.
+
+  - **Circuitos de Retificação**: Usados para garantir que a corrente flua corretamente em circuitos de motores e outras partes eletrônicas.
+
+  - **Circuitos de Acionamento de LEDs**: Usados em sinais luminosos, como indicadores de status de sistemas e sensores. Controlam o brilho e a intensidade de LEDs.
+
+  - **Circuitos de Proteção de Motores**: Protegem os motores contra correntes inversas.
+</details>
+
+<details>
+  <summary id="referências">📚 Referências</summary>
+  - https://materialpublic.imd.ufrn.br/curso/disciplina/1/47/3/5
+
+  - https://www.fluke.com/pt-pt/saber-mais/blog/aplicacoes-eletricas/o-que-e-um-diodo
+
+  - https://www.mundodaeletrica.com.br/o-que-e-um-diodo/
+
+  - https://www.manualdaeletronica.com.br/diodo-o-que-e-qual-a-sua-aplicacao/
+
+  - https://www.makerhero.com/guia/componentes-eletronicos/diodo/
+</details>
 
 #### Transistores 
 Os transistores são dispositivos semicondutores fundamentais na eletrônica moderna. Eles são usados para amplificar ou controlar o fluxo de corrente elétrica em circuitos eletrônicos. Em essência, os transistores atuam como interruptores ou amplificadores de corrente, permitindo o controle preciso do fluxo de elétrons em um circuito. Existem diferentes tipos de transistores, sendo os mais comuns os transistores bipolares e os transistores de efeito de campo (FETs). 
